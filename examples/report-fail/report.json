@@ -1,0 +1,518 @@
+{
+  "schema": "dsh-mask-pixel-lock/report@1",
+  "id": "f3693324c8816ddb",
+  "createdAt": "2026-10-22T02:44:42.810Z",
+  "durationMs": 182,
+  "tool": {
+    "name": "dsh-mask-pixel-lock",
+    "version": "0.1.0"
+  },
+  "verdict": "fail",
+  "reason": "protected-pixels-changed",
+  "label": "检出背景曝光漂移",
+  "inputs": {
+    "original": {
+      "path": "examples/before.png",
+      "bytes": 191040,
+      "sha256": "8c76d221d8272d5ac144b64bf0da23843e6a898a0bbd7bfd5e63d835e1a9f0c4",
+      "width": 640,
+      "height": 400,
+      "colorType": 2,
+      "bitDepth": 8,
+      "interlace": 0
+    },
+    "generated": {
+      "path": "examples/after-leak.png",
+      "bytes": 192816,
+      "sha256": "8c5bb0dfca883ac3516df0595b6de985df2aeeb34094e2c0bec785410479ba65",
+      "width": 640,
+      "height": 400,
+      "colorType": 2,
+      "bitDepth": 8,
+      "interlace": 0
+    },
+    "mask": {
+      "path": "examples/mask.png",
+      "bytes": 1085,
+      "sha256": "9386a273782fb8b535d67e4f411300d4e46365ce24ef4a8e8e35da24eca42890",
+      "width": 640,
+      "height": 400,
+      "colorType": 0,
+      "bitDepth": 8,
+      "interlace": 0
+    }
+  },
+  "policy": {
+    "maskMode": "edit",
+    "maskThreshold": 127,
+    "tolerance": 0,
+    "ignoreAlpha": false
+  },
+  "comparison": {
+    "verdict": "fail",
+    "tolerance": 0,
+    "compareAlpha": true,
+    "totalPixels": 256000,
+    "protectedPixels": 184759,
+    "editablePixels": 71241,
+    "unchangedPixels": 0,
+    "changedPixels": 184759,
+    "exactChangedPixels": 184759,
+    "changedRatio": 1,
+    "exactChangedRatio": 1,
+    "maxDelta": 4,
+    "meanDelta": 3.9924712733885763,
+    "perChannelMax": {
+      "r": 4,
+      "g": 3,
+      "b": 2,
+      "a": 0
+    },
+    "region": {
+      "x": 0,
+      "y": 0,
+      "w": 640,
+      "h": 400
+    },
+    "bbox": {
+      "x": 0,
+      "y": 0,
+      "w": 640,
+      "h": 400
+    },
+    "histogram": [
+      {
+        "label": "0",
+        "min": 0,
+        "max": 0,
+        "count": 0
+      },
+      {
+        "label": "1",
+        "min": 1,
+        "max": 1,
+        "count": 0
+      },
+      {
+        "label": "2-3",
+        "min": 2,
+        "max": 3,
+        "count": 1391
+      },
+      {
+        "label": "4-7",
+        "min": 4,
+        "max": 7,
+        "count": 183368
+      },
+      {
+        "label": "8-15",
+        "min": 8,
+        "max": 15,
+        "count": 0
+      },
+      {
+        "label": "16-31",
+        "min": 16,
+        "max": 31,
+        "count": 0
+      },
+      {
+        "label": "32-63",
+        "min": 32,
+        "max": 63,
+        "count": 0
+      },
+      {
+        "label": "64-127",
+        "min": 64,
+        "max": 127,
+        "count": 0
+      },
+      {
+        "label": "128-255",
+        "min": 128,
+        "max": 255,
+        "count": 0
+      }
+    ],
+    "samples": [
+      {
+        "x": 0,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          209,
+          202,
+          192,
+          255
+        ],
+        "generated": [
+          213,
+          205,
+          194,
+          255
+        ]
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          209,
+          202,
+          192,
+          255
+        ],
+        "generated": [
+          213,
+          205,
+          194,
+          255
+        ]
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          210,
+          203,
+          192,
+          255
+        ],
+        "generated": [
+          214,
+          206,
+          194,
+          255
+        ]
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          210,
+          203,
+          193,
+          255
+        ],
+        "generated": [
+          214,
+          206,
+          195,
+          255
+        ]
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          210,
+          203,
+          193,
+          255
+        ],
+        "generated": [
+          214,
+          206,
+          195,
+          255
+        ]
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          210,
+          203,
+          193,
+          255
+        ],
+        "generated": [
+          214,
+          206,
+          195,
+          255
+        ]
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          210,
+          203,
+          193,
+          255
+        ],
+        "generated": [
+          214,
+          206,
+          195,
+          255
+        ]
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          210,
+          203,
+          192,
+          255
+        ],
+        "generated": [
+          214,
+          206,
+          194,
+          255
+        ]
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          211,
+          204,
+          193,
+          255
+        ],
+        "generated": [
+          215,
+          207,
+          195,
+          255
+        ]
+      },
+      {
+        "x": 9,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          211,
+          204,
+          193,
+          255
+        ],
+        "generated": [
+          215,
+          207,
+          195,
+          255
+        ]
+      },
+      {
+        "x": 10,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          212,
+          205,
+          194,
+          255
+        ],
+        "generated": [
+          216,
+          208,
+          196,
+          255
+        ]
+      },
+      {
+        "x": 11,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          212,
+          205,
+          194,
+          255
+        ],
+        "generated": [
+          216,
+          208,
+          196,
+          255
+        ]
+      },
+      {
+        "x": 12,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          211,
+          203,
+          193,
+          255
+        ],
+        "generated": [
+          215,
+          206,
+          195,
+          255
+        ]
+      },
+      {
+        "x": 13,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          212,
+          205,
+          195,
+          255
+        ],
+        "generated": [
+          216,
+          208,
+          197,
+          255
+        ]
+      },
+      {
+        "x": 14,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          212,
+          205,
+          194,
+          255
+        ],
+        "generated": [
+          216,
+          208,
+          196,
+          255
+        ]
+      },
+      {
+        "x": 15,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          212,
+          205,
+          194,
+          255
+        ],
+        "generated": [
+          216,
+          208,
+          196,
+          255
+        ]
+      },
+      {
+        "x": 16,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          213,
+          206,
+          194,
+          255
+        ],
+        "generated": [
+          217,
+          209,
+          196,
+          255
+        ]
+      },
+      {
+        "x": 17,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          212,
+          205,
+          195,
+          255
+        ],
+        "generated": [
+          216,
+          208,
+          197,
+          255
+        ]
+      },
+      {
+        "x": 18,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          212,
+          205,
+          194,
+          255
+        ],
+        "generated": [
+          216,
+          208,
+          196,
+          255
+        ]
+      },
+      {
+        "x": 19,
+        "y": 0,
+        "delta": 4,
+        "original": [
+          212,
+          205,
+          195,
+          255
+        ],
+        "generated": [
+          216,
+          208,
+          197,
+          255
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "dimensions": {
+    "width": 640,
+    "height": 400
+  },
+  "scope": {
+    "markedPixels": 71241,
+    "protectedPixels": 184759,
+    "editablePixels": 71241
+  },
+  "proof": {
+    "algorithm": "sha256",
+    "schema": "dsh-mask-pixel-lock/proof@1",
+    "pixelSchema": "dsh-mask-pixel-lock/protected-pixels@1",
+    "files": {
+      "original": "8c76d221d8272d5ac144b64bf0da23843e6a898a0bbd7bfd5e63d835e1a9f0c4",
+      "generated": "8c5bb0dfca883ac3516df0595b6de985df2aeeb34094e2c0bec785410479ba65",
+      "mask": "9386a273782fb8b535d67e4f411300d4e46365ce24ef4a8e8e35da24eca42890"
+    },
+    "protectedPixels": {
+      "count": 184759,
+      "channels": 4,
+      "original": "73407d5ca9a1fc34e98443e9a642c20e8435c5bd9b1311f225a9aa8451e30db7",
+      "generated": "8f5b52178daeacbed76a48ff8a845d3fb4d2a702e6d552035bcba6587fd388e1",
+      "equal": false
+    },
+    "proofDigest": "f3693324c8816ddbc5b2512651eae26af993d1e2aea8c435349b672e37fdb15e",
+    "statement": "受保护像素存在差异（详见差异统计）"
+  },
+  "outputs": {
+    "dir": "examples/report-fail",
+    "heatmap": "examples/report-fail/heatmap.png",
+    "reportJson": "examples/report-fail/report.json",
+    "reportHtml": "examples/report-fail/report.html"
+  },
+  "warnings": []
+}

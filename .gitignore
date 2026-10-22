@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+# The verifier's default output directories are reproducible artifacts, not
+# source. The two curated example reports under examples/report-* are committed
+# on purpose; everything else generated next to an image is ignored.
+examples/mask-pixel-lock-*/
+*.tmp
+.chrome-tmp/
+*.tgz
+.DS_Store

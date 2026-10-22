@@ -1,0 +1,82 @@
+{
+  "filters.png": {
+    "bitDepth": 8,
+    "colorType": 2,
+    "height": 5,
+    "rgbaBytes": 100,
+    "rgbaSha256": "1dd62280b49497fb6b594eb12515346cf4dd07f903e83d1336c3ad4d7d5ad73b",
+    "width": 5
+  },
+  "gray-16.png": {
+    "bitDepth": 16,
+    "colorType": 0,
+    "height": 7,
+    "rgbaBytes": 252,
+    "rgbaSha256": "9655b06817d0be4a07b976cc79a76f0f37efcfa431e96681804e5d2f9b564cbe",
+    "width": 9
+  },
+  "gray-alpha.png": {
+    "bitDepth": 8,
+    "colorType": 4,
+    "height": 7,
+    "rgbaBytes": 252,
+    "rgbaSha256": "e0e91b7c4847d1fd547c5992e71d96aa801f9483927f92315a09f9c46c36fd3e",
+    "width": 9
+  },
+  "gray.png": {
+    "bitDepth": 8,
+    "colorType": 0,
+    "height": 7,
+    "rgbaBytes": 252,
+    "rgbaSha256": "2a1e7b1b2feb4355267fbac01912b78c2714d08ebe0380c9041ff0a0680c8136",
+    "width": 9
+  },
+  "interlaced.png": {
+    "bitDepth": 8,
+    "colorType": 6,
+    "height": 7,
+    "rgbaBytes": 252,
+    "rgbaSha256": "6ce7564d66f6641f02106c90048771d5ae7f970d442a85fe87f62fcac4fbaa68",
+    "width": 9
+  },
+  "palette-trns.png": {
+    "bitDepth": 4,
+    "colorType": 3,
+    "height": 7,
+    "rgbaBytes": 252,
+    "rgbaSha256": "7f8aeb5c2e8d7a77d998071dabb28a7b724086ac9fa36ebd8bb40501ed01c5f8",
+    "width": 9
+  },
+  "palette.png": {
+    "bitDepth": 4,
+    "colorType": 3,
+    "height": 7,
+    "rgbaBytes": 252,
+    "rgbaSha256": "570839772a4e142064b9f5c8c3a538c55c329f9aec5788d457f96698bc74400e",
+    "width": 9
+  },
+  "rgb-16.png": {
+    "bitDepth": 16,
+    "colorType": 2,
+    "height": 7,
+    "rgbaBytes": 252,
+    "rgbaSha256": "3c859d064a5da567896eb76766e8487b52e18cd9b4ac05d715c3a6d8763b6a74",
+    "width": 9
+  },
+  "rgb.png": {
+    "bitDepth": 8,
+    "colorType": 2,
+    "height": 7,
+    "rgbaBytes": 252,
+    "rgbaSha256": "0180d2c25aff5e411c1808f72596b4dd0591193291a5013dc1b4197322d9a055",
+    "width": 9
+  },
+  "rgba.png": {
+    "bitDepth": 8,
+    "colorType": 6,
+    "height": 7,
+    "rgbaBytes": 252,
+    "rgbaSha256": "6ce7564d66f6641f02106c90048771d5ae7f970d442a85fe87f62fcac4fbaa68",
+    "width": 9
+  }
+}

@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build host and client halves
+        run: node scripts/build.mjs
+      - name: Check that lib/ is committed in sync with src/
+        run: git diff --exit-code -- lib
+      - name: Run the test suite
+        run: npm test
+      - name: Check the published file list
+        run: npm pack --dry-run

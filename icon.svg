@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mask Pixel Lock">
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <rect x="12" y="12" width="16" height="16" rx="3" fill="#475569"/>
+  <rect x="36" y="12" width="16" height="16" rx="3" fill="#475569"/>
+  <rect x="12" y="36" width="16" height="16" rx="3" fill="#475569"/>
+  <rect x="36" y="36" width="16" height="16" rx="3" fill="#f59e0b"/>
+  <path d="M41 43v-2.6a3 3 0 0 1 6 0V43" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+  <rect x="40" y="43" width="8" height="6.4" rx="1.6" fill="#0f172a"/>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Mask Pixel Lock",
+    "description": "Prove that every pixel outside an edit mask is byte-identical: per-pixel comparison, a difference heatmap and a SHA-256 proof report."
+  }
+}

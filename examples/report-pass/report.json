@@ -1,0 +1,172 @@
+{
+  "schema": "dsh-mask-pixel-lock/report@1",
+  "id": "7f0d5efd1a411731",
+  "createdAt": "2026-10-22T02:44:42.468Z",
+  "durationMs": 166,
+  "tool": {
+    "name": "dsh-mask-pixel-lock",
+    "version": "0.1.0"
+  },
+  "verdict": "pass",
+  "reason": null,
+  "label": "主体缩小 18%，背景光影保持不变",
+  "inputs": {
+    "original": {
+      "path": "examples/before.png",
+      "bytes": 191040,
+      "sha256": "8c76d221d8272d5ac144b64bf0da23843e6a898a0bbd7bfd5e63d835e1a9f0c4",
+      "width": 640,
+      "height": 400,
+      "colorType": 2,
+      "bitDepth": 8,
+      "interlace": 0
+    },
+    "generated": {
+      "path": "examples/after.png",
+      "bytes": 192435,
+      "sha256": "80fc1827ed8a5a23704ba90561d7aef66d1e61d4a6a0408755515d98442eda3f",
+      "width": 640,
+      "height": 400,
+      "colorType": 2,
+      "bitDepth": 8,
+      "interlace": 0
+    },
+    "mask": {
+      "path": "examples/mask.png",
+      "bytes": 1085,
+      "sha256": "9386a273782fb8b535d67e4f411300d4e46365ce24ef4a8e8e35da24eca42890",
+      "width": 640,
+      "height": 400,
+      "colorType": 0,
+      "bitDepth": 8,
+      "interlace": 0
+    }
+  },
+  "policy": {
+    "maskMode": "edit",
+    "maskThreshold": 127,
+    "tolerance": 0,
+    "ignoreAlpha": false
+  },
+  "comparison": {
+    "verdict": "pass",
+    "tolerance": 0,
+    "compareAlpha": true,
+    "totalPixels": 256000,
+    "protectedPixels": 184759,
+    "editablePixels": 71241,
+    "unchangedPixels": 184759,
+    "changedPixels": 0,
+    "exactChangedPixels": 0,
+    "changedRatio": 0,
+    "exactChangedRatio": 0,
+    "maxDelta": 0,
+    "meanDelta": 0,
+    "perChannelMax": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "region": {
+      "x": 0,
+      "y": 0,
+      "w": 640,
+      "h": 400
+    },
+    "bbox": null,
+    "histogram": [
+      {
+        "label": "0",
+        "min": 0,
+        "max": 0,
+        "count": 184759
+      },
+      {
+        "label": "1",
+        "min": 1,
+        "max": 1,
+        "count": 0
+      },
+      {
+        "label": "2-3",
+        "min": 2,
+        "max": 3,
+        "count": 0
+      },
+      {
+        "label": "4-7",
+        "min": 4,
+        "max": 7,
+        "count": 0
+      },
+      {
+        "label": "8-15",
+        "min": 8,
+        "max": 15,
+        "count": 0
+      },
+      {
+        "label": "16-31",
+        "min": 16,
+        "max": 31,
+        "count": 0
+      },
+      {
+        "label": "32-63",
+        "min": 32,
+        "max": 63,
+        "count": 0
+      },
+      {
+        "label": "64-127",
+        "min": 64,
+        "max": 127,
+        "count": 0
+      },
+      {
+        "label": "128-255",
+        "min": 128,
+        "max": 255,
+        "count": 0
+      }
+    ],
+    "samples": [],
+    "warnings": []
+  },
+  "dimensions": {
+    "width": 640,
+    "height": 400
+  },
+  "scope": {
+    "markedPixels": 71241,
+    "protectedPixels": 184759,
+    "editablePixels": 71241
+  },
+  "proof": {
+    "algorithm": "sha256",
+    "schema": "dsh-mask-pixel-lock/proof@1",
+    "pixelSchema": "dsh-mask-pixel-lock/protected-pixels@1",
+    "files": {
+      "original": "8c76d221d8272d5ac144b64bf0da23843e6a898a0bbd7bfd5e63d835e1a9f0c4",
+      "generated": "80fc1827ed8a5a23704ba90561d7aef66d1e61d4a6a0408755515d98442eda3f",
+      "mask": "9386a273782fb8b535d67e4f411300d4e46365ce24ef4a8e8e35da24eca42890"
+    },
+    "protectedPixels": {
+      "count": 184759,
+      "channels": 4,
+      "original": "73407d5ca9a1fc34e98443e9a642c20e8435c5bd9b1311f225a9aa8451e30db7",
+      "generated": "73407d5ca9a1fc34e98443e9a642c20e8435c5bd9b1311f225a9aa8451e30db7",
+      "equal": true
+    },
+    "proofDigest": "7f0d5efd1a411731560bef7efd84102aefc04936f69a9218e9de97dcd8a2e590",
+    "statement": "受保护像素逐字节相同"
+  },
+  "outputs": {
+    "dir": "examples/report-pass",
+    "heatmap": "examples/report-pass/heatmap.png",
+    "reportJson": "examples/report-pass/report.json",
+    "reportHtml": "examples/report-pass/report.html"
+  },
+  "warnings": []
+}
