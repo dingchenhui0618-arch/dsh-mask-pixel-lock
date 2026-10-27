@@ -1,7 +1,12 @@
 # dsh-mask-pixel-lock
 
+[![CI](https://github.com/dingchenhui0618-arch/dsh-mask-pixel-lock/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/dingchenhui0618-arch/dsh-mask-pixel-lock/actions/workflows/ci.yml)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 > 局部改图之后，**蒙版外的每一个像素是否还和原图逐字节相同？**
 > 三张 PNG 进去，一句可 `grep` 的结论、一张差异热力图、一份可复算的 SHA-256 证明出来。
+
+> 用着还行的话，点个 ⭐ 就够了——插件市场的「搜插件」按 GitHub star 排序，star 是这个插件能被人翻到的唯一杠杆。
 
 ![差异热力图与哈希证明报告](docs/screenshot-1.png)
 

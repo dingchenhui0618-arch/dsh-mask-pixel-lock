@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased]
+
+### 文档与工程
+
+- 新增 `SECURITY.md`：信任边界、不可信输入、鉴权现状、已知限制与漏洞报告渠道。
+- CI（`.github/workflows/ci.yml`）已覆盖 build、`lib/` 一致性、单测与打包 dry-run，这里只做核对。
+- README 顶部加 CI / license badge 与 star 引导。
+
 ## 0.1.0 — 2026-10-22
 
 首个版本。
